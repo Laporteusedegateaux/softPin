@@ -1,5 +1,4 @@
 ![img](https://i.imgur.com/1SrS3BG.gif)
-
 # A SoftBody3D Pinned Point addon for Godot 4.2+
 This addon makes it easier to pin points on a SoftBody3D Node. The `SoftPin Node` uses Vertex Colors and separate the areas you want the SoftBody3D to simulate.
 > [!WARNING]
@@ -20,6 +19,7 @@ This addon makes it easier to pin points on a SoftBody3D Node. The `SoftPin Node
 
 ![img](https://i.imgur.com/VzXU6Fh.png)
 
+
 # How to use
 >[!NOTE]
 >First you'll need to vertex paint your model. That will require Blender or another 3D software of choice.
@@ -37,12 +37,20 @@ This addon makes it easier to pin points on a SoftBody3D Node. The `SoftPin Node
 4. Export your model to godot.
 
 ## Using the SoftPin Node
-
-This is the softPin Node menu:
+Add the softPin Node to the scene with the mesh you want to pin.
 
 ![img](https://i.imgur.com/rKPyuAQ.png)
 
-###
+| Property      |     Description |
+| ------------- | -------------   |
+|` Soft Body`  | Used to assign the SoftBody3D you want to pin |
+| `Bone Attachment`  | Used to attach the pinned points to `BoneAttachment3D` when Pin Type: is set to Skelelton3D |
+| `Pin Type`  | Method of pinning, If `MeshInstance3D` is selected you only need a SoftBody. If `Skeleton3D` is selected you'll need to include a BoneAttachment with the SoftBody  |
+|` Start Pinning`  | Used to start the pinning process |
+| `Pinning Status` | Debug menu that tells you the status of the pinning|
+
+#Pin Type
+
 
 # Current Gotchas
 > [!CAUTION]
