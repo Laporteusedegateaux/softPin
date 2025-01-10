@@ -1,4 +1,4 @@
-# SoftPin a SoftBody3D Pin addon for Godot
+# A SoftBody3D Pin addon for Godot
 ![img](https://i.imgur.com/1SrS3BG.gif)
 
 > [!NOTE]
