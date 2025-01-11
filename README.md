@@ -4,10 +4,6 @@ This addon makes it easier to pin points on a SoftBody3D Node. The `SoftPin Node
 > [!WARNING]
 > This addon was written in C# and will require Godot Engine - .NET build. A GDScript overhaul will come in the near future.
 
-- [Installation](https://github.com/BryantCrisos/softPin/tree/main?tab=readme-ov-file#installation)
-- 
-
-
 # Installation
 1. Download the repository as a zip and extract it.
 2. Copy the `addons` folder into the root folder of your project.
@@ -19,7 +15,7 @@ This addon makes it easier to pin points on a SoftBody3D Node. The `SoftPin Node
 
 ![img](https://i.imgur.com/WRO9M6b.png)
 
-5. You're ready to go! The SoftPin Node should be under Node
+5. You're ready to go! The `SoftPin Node` should be under Node
 
 ![img](https://i.imgur.com/VzXU6Fh.png)
 
@@ -41,7 +37,7 @@ This addon makes it easier to pin points on a SoftBody3D Node. The `SoftPin Node
 4. Export your model to godot.
 
 ## Using the SoftPin Node
-Add the `SoftPin` Node to the scene with the mesh you want to pin.
+Add the `SoftPin Node` to the scene with the mesh you want to pin.
 
 ![img](https://i.imgur.com/rKPyuAQ.png)
 
