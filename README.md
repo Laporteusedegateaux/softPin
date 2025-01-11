@@ -58,7 +58,7 @@ Once you're done you can delete the `SoftPin Node` from the scene or repeat the 
 
 ## Pinning Skeleton3D
 >[!WARNING]
->When using `PinType: Skeleton3D`, this is more ideal for things like hair, hanging cloth, and Accessories that only need one bone. Refer to [Current Gotachas]() for more info.
+>When using `PinType: Skeleton3D`, this is more ideal for things like hair, hanging cloth, and Accessories that only need one bone. Refer to [Current Gotchas](https://github.com/BryantCrisos/softPin/tree/main?tab=readme-ov-file#current-gotchas) for more info.
 
 Before starting to pin your initial setup should look something like this.
 
