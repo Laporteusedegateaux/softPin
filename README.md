@@ -50,7 +50,7 @@ Add the `SoftPin Node` to the scene with the mesh you want to pin.
 |`Pinning Status `| Debug menu that tells you the status of the pinning or errors                       |
 
 ## Pinning MeshInstance3D
-When pinning a `MeshInstance3D ` convert the instance into a SoftBody, Assign the `SoftBody3D`, Set the `Pin Type:` to `MeshInstance3D`, and switch `Start Pinning` to On. 
+When pinning a `MeshInstance3D ` convert the instance into a `SoftBody3D`, Assign the `SoftBody3D`, Set the `Pin Type:` to `MeshInstance3D`, and switch `Start Pinning` to On. 
 
 ![img](https://i.imgur.com/C58M4oK.gif)
 
