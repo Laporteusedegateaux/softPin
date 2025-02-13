@@ -7,13 +7,10 @@ This addon makes it easier to pin points on a `SoftBody3D` Node. The `SoftPin No
 2. Copy the `addons` folder into the root folder of your project.
 3. Go to Project > Project Settings > Plugins tab and enable SoftPin
 
+
 ![img](https://i.imgur.com/yX16MdL.png) 
 
-4. Click on the `build project` button to compile C# scripts
-
-![img](https://i.imgur.com/WRO9M6b.png)
-
-5. You're ready to go! The `SoftPin Node` should be under Node
+4. You're ready to go! The `SoftPin Node` should be under Node
 
 ![img](https://i.imgur.com/VzXU6Fh.png)
 
