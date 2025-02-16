@@ -17,13 +17,12 @@ enum PinType
 
 #Variables 
 @export var softbody: SoftBody3D
-@export var boneattachment: BoneAttachment3D 
+@export var boneattachment: BoneAttachment3D
 @export var pin_type:PinType
 @export var start_pinning: PinState
 @export var pinning_status = "No softbody assigned"
 
 var mesh : Mesh
-var skeleton : Skeleton3D
 var vert_amount 
 var white_color = Color(1,1,1,1)
 var black_color = Color(0,0,0,1)
@@ -69,10 +68,8 @@ func assign_pins():
 					else:
 						#NO COLOR DETECTED SET PIN
 						softbody.set_point_pinned(i,true) 
-				pinning_status = "Pinning Complete!"
-				print("SOFTPIN: Pinning Complete!")
 			
-			elif (pin_type == PinType.SKELETON3D):
+			if (pin_type == PinType.SKELETON3D):
 				if (boneattachment != null):
 					var bonepath = softbody.get_path_to(boneattachment)
 					for i in range(vert_amount):
@@ -84,18 +81,21 @@ func assign_pins():
 							#NO COLOR DETECTED SET PIN
 							softbody.set_point_pinned(i,true,bonepath) 
 					if(softbody.skeleton != null):
-						softbody.skeleton.is_empty()
-						print("SOFTPIN: Pinning Complete!")
-						pinning_status = "Pinning Complete!"
-				else: printerr("NULL REF! SOFTPIN ACTION REQUIRE: ASSIGN BONEATTACHMENT3D")	
-				pinning_status = "NULL REF! Assign BoneAttachment"
-				return
+						softbody.skeleton = ""
+				else: 
+					printerr("NULL REF! SOFTPIN ACTION REQUIRE: ASSIGN BONEATTACHMENT3D")
+					pinning_status = "NULL REF! Assign BoneAttachment" 
+					return
 				
 				#Clear
-				arraymesh.clear_surfaces()
-				meshdatatool.clear()
-				softbody = null
-				boneattachment = null
-				print("PINNING COMPLETE")
-		else: printerr("NULL REF! SOFTPIN ACTION REQUIRE: ASSIGN SOFTBODY3D")
-		pinning_status = "NULL REF! Assign Softbody"
+			
+			print("SOFTPIN: PINNING COMPLETE")
+			pinning_status = softbody.name + " Pinning complete"
+			arraymesh.clear_surfaces()
+			meshdatatool.clear()
+			softbody = null
+			boneattachment = null
+			
+		else: 
+			printerr("NULL REF! SOFTPIN ACTION REQUIRE: ASSIGN SOFTBODY3D")
+			pinning_status = "NULL REF! Assign Softbody"
