@@ -1,6 +1,7 @@
 ![img](https://i.imgur.com/1SrS3BG.gif)
-# A SoftBody3D Pinned Point addon for Godot 4.2+
+# A SoftBody3D Pinned Point addon for Godot 4.4+
 This addon makes it easier to pin points on a `SoftBody3D` Node. The `SoftPin Node` uses Vertex Colors and separate the areas you want the `SoftBody3D` to simulate.
+NOTE: The only reason the addon requires 4.4+ is because of the @export_tool_button that was added in 4.4 . If you replace that code for something else that achieves the same (for example, a boolean) - the rest of the addon will work just fine.
 
 # Installation
 1. Download the repository as a zip and extract it.
