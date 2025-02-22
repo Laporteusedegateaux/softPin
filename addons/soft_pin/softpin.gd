@@ -28,7 +28,6 @@ var arrays = []
 
 
 func _validate_property(property):
-	print(property["name"])
 	if property["name"] == "pinning" :
 		if softbody == null :
 			property.usage |= PROPERTY_USAGE_READ_ONLY
